@@ -1,0 +1,12 @@
+@mixin text($font-family, $font-size: null, $weight: null, $color: null) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin backgroundImage($back, $repeat: null, $size: null) {
+  background-image: url($image);
+  background-repeat: $repeat;
+  background-size: $size;
+}
