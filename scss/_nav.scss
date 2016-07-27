@@ -13,19 +13,29 @@
 .gallery-header {
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: darken($nav-blue, 25%);
   .gallery-nav {
     height: 100px;
+
     @extend %nav-header;
+    ul {
+      justify-content: space-around;
+    }
+    a {
+      @include text(Roboto, 18px, normal, white);
+    }
   }
   .search {
     height: 100px;
-    color: white;
-    @extend %nav-header;
-    @include text(Dosis, 20px, normal, white);
+    @extend %non-nav-header;
+    @include text(Roboto, 18px, normal, white);
     p {
       padding-right: 10px;
+      text-decoration: none;
+      &:hover {
+        color: $nav-blue;
+      }
     }
   }
 }

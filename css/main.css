@@ -55,32 +55,39 @@ table {
 body {
   background: black; }
 
-.header .logo {
+.header .logo, .gallery-header .search {
   display: flex;
   width: 30%;
   height: 200px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: Dosis;
+  font-size: 25px;
+  font-weight: normal;
+  color: white; }
+  .header .logo a, .gallery-header .search a {
+    text-decoration: none;
+    color: white; }
 
-.header .header-nav, .gallery-header .gallery-nav, .gallery-header .search {
+.header .header-nav, .gallery-header .gallery-nav {
   width: 60%;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .header .header-nav ul, .gallery-header .gallery-nav ul, .gallery-header .search ul {
+  .header .header-nav ul, .gallery-header .gallery-nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%; }
-  .header .header-nav li, .gallery-header .gallery-nav li, .gallery-header .search li {
+  .header .header-nav li, .gallery-header .gallery-nav li {
     display: inline; }
-  .header .header-nav a, .gallery-header .gallery-nav a, .gallery-header .search a {
+  .header .header-nav a, .gallery-header .gallery-nav a {
     text-decoration: none;
     font-family: Dosis;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
     color: white; }
-    .header .header-nav a:hover, .gallery-header .gallery-nav a:hover, .gallery-header .search a:hover {
+    .header .header-nav a:hover, .gallery-header .gallery-nav a:hover {
       color: #509cbc; }
 
 .hero {
@@ -95,8 +102,8 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-top: 40px;
-    margin-left: 85px; }
+    margin-top: 130px;
+    margin-left: 250px; }
     .hero .hero-banner .first-line {
       font-family: Dosis;
       font-size: 25px;
@@ -121,7 +128,7 @@ body {
       color: white;
       text-transform: uppercase;
       display: flex;
-      height: 222px;
+      height: 500px;
       width: 300px;
       flex-direction: column;
       justify-content: flex-end;
@@ -141,18 +148,27 @@ body {
 .gallery-header {
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #275366; }
   .gallery-header .gallery-nav {
     height: 100px; }
+    .gallery-header .gallery-nav ul {
+      justify-content: space-around; }
+    .gallery-header .gallery-nav a {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: normal;
+      color: white; }
   .gallery-header .search {
     height: 100px;
-    color: white;
-    font-family: Dosis;
-    font-size: 20px;
+    font-family: Roboto;
+    font-size: 18px;
     font-weight: normal;
     color: white; }
     .gallery-header .search p {
-      padding-right: 10px; }
+      padding-right: 10px;
+      text-decoration: none; }
+      .gallery-header .search p:hover {
+        color: #509cbc; }
 
 /*# sourceMappingURL=main.css.map */
