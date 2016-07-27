@@ -128,12 +128,14 @@ body {
       color: white;
       text-transform: uppercase;
       display: flex;
-      height: 500px;
-      width: 300px;
+      align-self: flex-start;
       flex-direction: column;
-      justify-content: flex-end;
+      height: 15%;
+      width: 15%;
       align-items: center;
-      padding-bottom: 20px; }
+      justify-content: center;
+      padding-bottom: 20px;
+      padding-top: 40px; }
       .hero .hero-banner .enter a {
         text-decoration: none;
         color: white; }
