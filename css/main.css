@@ -52,63 +52,81 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, .container {
-  height: 100vh;
-  width: 100vw;
+body {
   background: black; }
 
 .hero {
+  background-image: url("../img/2bjorks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center; }
+  background-position: center; }
+  .hero .hero-banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 85px; }
+    .hero .hero-banner .first-line {
+      font-family: Dosis;
+      font-size: 25px;
+      font-weight: normal;
+      color: white;
+      letter-spacing: 2px;
+      margin-bottom: 10px; }
+    .hero .hero-banner .separator-line {
+      margin: 15px 0px;
+      width: 250px;
+      background: white;
+      height: 5px; }
+    .hero .hero-banner .second-line {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+    .hero .hero-banner .enter {
+      color: white;
+      font-family: Dosis;
+      font-size: 20px;
+      font-weight: normal;
+      color: white;
+      text-transform: uppercase;
+      display: flex;
+      height: 222px;
+      width: 300px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 20px; }
 
-.hero-content {
-  height: 100%;
+.header {
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vh;
-  border: 1px solid crimson; }
-  .hero-content .top-nav {
-    height: 200px; }
-  .hero-content .logo {
-    font-family: serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: white; }
-  .hero-content .menu {
-    font-family: serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
+  background: black; }
+  .header .logo {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    align-items: center;
+    justify-content: center; }
+  .header .header-nav {
+    width: 60%;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .hero-content .menu ul {
-      display: flex; }
-    .hero-content .menu li {
-      padding: 0 20px 0; }
-  .hero-content .hero-banner {
-    display: flex;
-    width: 100%;
-    height: 250px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    margin-top: 90px; }
-  .hero-content .line-break {
-    width: 250px;
-    height: 5px;
-    background: white;
-    margin-top: 25px; }
-
-.hero-content .top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  width: 1100px; }
+    .header .header-nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .header .header-nav li {
+      display: inline; }
+    .header .header-nav a {
+      text-decoration: none;
+      font-family: Dosis;
+      font-size: 20px;
+      font-weight: normal;
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */

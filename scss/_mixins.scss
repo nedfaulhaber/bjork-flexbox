@@ -4,9 +4,3 @@
   font-weight: $weight;
   color: $color;
 }
-
-@mixin background-image($back, $repeat: null, $size: null) {
-  background-image: url($image);
-  background-repeat: $repeat;
-  background-size: $size;
-}

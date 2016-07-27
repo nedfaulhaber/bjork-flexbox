@@ -1,4 +1,9 @@
-// Global Imports //
-@import "home-base/index";
-@import "components/index";
-@import "helpers/index";
+@import "reset";
+@import "mixins";
+@import "base";
+@import "buttons";
+@import "extends";
+@import "gallery";
+@import "hero";
+@import "nav";
+@import "variables";
