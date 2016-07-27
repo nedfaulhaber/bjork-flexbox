@@ -1,32 +1,31 @@
-.header {
+  .header {
   height: 200px;
   display: flex;
   background: black;
   .logo {
-    display: flex;
-    width: 30%;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
+    @extend %non-nav-header;
   }
   .header-nav {
-    width: 60%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    li {
-      display: inline;
-    }
-    a {
-      text-decoration: none;
-      @include text(Dosis, 20px, normal, white);
+    @extend %nav-header;
   }
+}
 
+.gallery-header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background: darken($nav-blue, 25%);
+  .gallery-nav {
+    height: 100px;
+    @extend %nav-header;
+  }
+  .search {
+    height: 100px;
+    color: white;
+    @extend %nav-header;
+    @include text(Dosis, 20px, normal, white);
+    p {
+      padding-right: 10px;
+    }
   }
 }

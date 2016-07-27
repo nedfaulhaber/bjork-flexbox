@@ -55,6 +55,34 @@ table {
 body {
   background: black; }
 
+.header .logo {
+  display: flex;
+  width: 30%;
+  height: 200px;
+  align-items: center;
+  justify-content: center; }
+
+.header .header-nav, .gallery-header .gallery-nav, .gallery-header .search {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header .header-nav ul, .gallery-header .gallery-nav ul, .gallery-header .search ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .header .header-nav li, .gallery-header .gallery-nav li, .gallery-header .search li {
+    display: inline; }
+  .header .header-nav a, .gallery-header .gallery-nav a, .gallery-header .search a {
+    text-decoration: none;
+    font-family: Dosis;
+    font-size: 20px;
+    font-weight: normal;
+    color: white; }
+    .header .header-nav a:hover, .gallery-header .gallery-nav a:hover, .gallery-header .search a:hover {
+      color: #509cbc; }
+
 .hero {
   background-image: url("../img/2bjorks.jpg");
   background-size: cover;
@@ -99,34 +127,32 @@ body {
       justify-content: flex-end;
       align-items: center;
       padding-bottom: 20px; }
+      .hero .hero-banner .enter a {
+        text-decoration: none;
+        color: white; }
+        .hero .hero-banner .enter a:hover {
+          color: #509cbc; }
 
 .header {
   height: 200px;
   display: flex;
   background: black; }
-  .header .logo {
-    display: flex;
-    width: 30%;
-    height: 200px;
-    align-items: center;
-    justify-content: center; }
-  .header .header-nav {
-    width: 60%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .header .header-nav ul {
-      display: flex;
-      justify-content: space-between;
-      width: 100%; }
-    .header .header-nav li {
-      display: inline; }
-    .header .header-nav a {
-      text-decoration: none;
-      font-family: Dosis;
-      font-size: 20px;
-      font-weight: normal;
-      color: white; }
+
+.gallery-header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background: #275366; }
+  .gallery-header .gallery-nav {
+    height: 100px; }
+  .gallery-header .search {
+    height: 100px;
+    color: white;
+    font-family: Dosis;
+    font-size: 20px;
+    font-weight: normal;
+    color: white; }
+    .gallery-header .search p {
+      padding-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */

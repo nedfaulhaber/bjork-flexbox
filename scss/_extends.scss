@@ -1,0 +1,30 @@
+%non-nav-header {
+  display: flex;
+  width: 30%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+%nav-header {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    @include text(Dosis, 20px, normal, white);
+    &:hover {
+      color: $nav-blue;
+    }
+  }
+}
