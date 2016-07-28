@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 400px;
+  flex: 1 1 25%;
+  border: 1px solid white;
+  background: black;
+}
+
+.image:nth-of-type(1) {
+  flex-basis: 50%;
+}
+
+.image:nth-of-type(6) {
+  flex-basis: 50%;
+}
+
+.gig {
+  background-image: url('../img/bjork-spikes.jpg');
+  @extend %gallery-img;
+  }
+
+
+.disc {
+  background-image: url('../img/post.jpeg');
+  @extend %gallery-img;
+}
+//
+// .vid {
+//   background-image: url('../img/post.jpeg');
+//   @extend %gallery-img;
+// }

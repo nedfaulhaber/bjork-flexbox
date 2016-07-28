@@ -90,6 +90,33 @@ body {
     .header .header-nav a:hover, .gallery-header .gallery-nav a:hover {
       color: #509cbc; }
 
+.gig, .disc {
+  background-position: center;
+  background-size: cover; }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.image {
+  height: 400px;
+  flex: 1 1 25%;
+  border: 1px solid white;
+  background: black; }
+
+.image:nth-of-type(1) {
+  flex-basis: 50%; }
+
+.image:nth-of-type(6) {
+  flex-basis: 50%; }
+
+.gig {
+  background-image: url("../img/bjork-spikes.jpg"); }
+
+.disc {
+  background-image: url("../img/post.jpeg"); }
+
 .hero {
   background-image: url("../img/2bjorks.jpg");
   background-size: cover;
@@ -141,6 +168,10 @@ body {
         color: white; }
         .hero .hero-banner .enter a:hover {
           color: #509cbc; }
+    @media only screen and (min-width 2121px) {
+      .hero .hero-banner {
+        margin-top: 300px;
+        margin-left: 420px; } }
 
 .header {
   height: 200px;
