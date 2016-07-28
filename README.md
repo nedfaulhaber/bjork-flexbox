@@ -13,15 +13,15 @@ This project was for Epicodus CSS class and was designed to practice SASS, flexb
 
 ## Known Bugs
 
-_None._
+None.
 
 ## Support and contact details
 
-_{If you encounter any bugs with this project, please email me at nedfaulhaber@gmail.com.}_
+If you encounter any bugs with this project, please email me at nedfaulhaber@gmail.com.
 
 ## Technologies Used
 
-* _HTML and CSS_
+* HTML and CSS
 * SASS
 * Flexbox
 
