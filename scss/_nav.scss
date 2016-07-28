@@ -1,12 +1,52 @@
-  .header {
+.header {
   height: 200px;
   display: flex;
   background: black;
+  @media only screen and (max-width: 700px) {
+    height: 0px;
+    width: 0px;
+    display: none;
+
+  }
   .logo {
     @extend %non-nav-header;
+    @media only screen and (max-width 700px) {
+      height: 0px;
+      width: 0px;
+      display: none;
+    }
   }
   .header-nav {
     @extend %nav-header;
+    @media only screen and (max-width: 700px) {
+      height: 0px;
+      width: 0px;
+      display: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    @media only screen and (max-width: 385px) {
+      right: 20px;
+      top: 15px;
+    }
+  }
+  .nav-button span {
+    display: flex;
+    flex-direction: column;
+    height: 2px;
+    width: 30px;
+    margin: 5px 0px;
+    background: white;
+    
+
+
   }
 }
 
@@ -15,9 +55,15 @@
   display: flex;
   justify-content: space-between;
   background: darken($nav-blue, 25%);
+  @media only screen and (max-width: 1010px) {
+    padding: 0 20px 0;
+  }
+  @media only screen and (max-width: 878px) {
+    display: none;
+  }
+
   .gallery-nav {
     height: 100px;
-
     @extend %nav-header;
     ul {
       justify-content: space-around;

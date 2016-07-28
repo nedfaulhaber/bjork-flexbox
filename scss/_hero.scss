@@ -5,6 +5,7 @@
   height: 100vh;
   width: 100vw;
   background-position: center;
+
   .hero-banner {
     display: flex;
     align-items: flex-start;
@@ -12,22 +13,48 @@
     flex-direction: column;
     margin-top: 130px;
     margin-left: 250px;
+    @media only screen and (max-width: 1483px) {
+      margin-top: 100px;
+      margin-left: 190px;
+    }
+    @media only screen and (max-width: 1200px) {
+      margin-top: 80px;
+      margin-left: 150px;
+    }
+    @media only screen and (max-width: 1100px) {
+      margin-left: 100px;
+    }
+    @media only screen and (max-width: 966px) {
+      margin-top: 60px;
+      margin-left: 80px;
+    }
+    @media only screen and (max-width: 915px) {
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+    @media only screen and (max-width: 330px) {
+      margin-left: 10px;
+    }
+
     .first-line {
       @include text(Dosis, 25px, normal, white);
       letter-spacing: 2px;
       margin-bottom: 10px;
     }
+
     .separator-line {
       margin: 15px 0px;
       width: 250px;
       background: white;
       height: 5px;
     }
+
     .second-line {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
+
     .enter {
       color: white;
       @include text(Dosis, 20px, normal, white);
@@ -41,17 +68,18 @@
       justify-content: center;
       padding-bottom: 20px;
       padding-top: 40px;
-        a {
+      a {
         text-decoration: none;
         color: white;
         &:hover {
         color: $nav-blue;
         }
       }
+      @media only screen and (max-width: 700px) {
+        height: 0px;
+        width: 0px;
+        display: none;
+      }
     }
-    @media only screen and (min-width 2121px) {
-      margin-top: 300px;
-      margin-left: 420px;
-    }
-  }
+}
 }
