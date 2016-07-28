@@ -29,4 +29,4 @@ If you encounter any bugs with this project, please email me at nedfaulhaber@gma
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2016 *_Ned Faulhaber_**
+Copyright (c) 2016 *_Ned Faulhaber_*
