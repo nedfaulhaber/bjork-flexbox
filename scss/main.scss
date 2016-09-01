@@ -1,9 +1,5 @@
-@import "reset";
-@import "mixins";
-@import "variables";
-@import "base";
-@import "buttons";
-@import "extends";
-@import "gallery";
-@import "hero";
-@import "nav";
+//Global Imports//
+
+@import "base/index";
+@import "components/index";
+@import "pages/index";

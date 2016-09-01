@@ -1,3 +1,5 @@
+//Hero//
+
 .hero {
   background-image: url("../img/2bjorks.jpg");
   background-size: cover;
@@ -81,5 +83,109 @@
         display: none;
       }
     }
+  }
 }
+
+
+//Gallery//
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  @media only screen and (max-width: 875px) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid white;
+  background: black;
+  width: 25%;
+  @media only screen and (max-width: 875px) {
+    width: 100%;
+  }
+}
+
+.image p {
+  opacity: 0;
+  @include text(Dosis, 22px, normal, white);
+  transition: .2s;
+  text-shadow: 0 0 1px black;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  line-height: 400px;
+  &:hover {
+    opacity: 1;
+  }
+  &:after, &:before {
+    z-index: -1;
+    transition: .2s;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+.gig {
+  background-image: url('../img/bjork-spikes.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  @media only screen and (max-width: 875px) {
+    width: 100%;
+  }
+}
+
+
+.disc {
+  background-image: url('../img/homogenic.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.vid {
+  background-image: url('../img/hyperballad.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.peeps {
+  background-image: url('../img/gondry.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.events {
+  background-image: url('../img/MoMa.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.archive {
+  background-image: url('../img/bjork_color.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  @media only screen and (max-width: 875px) {
+    width: 100%;
+  }
 }

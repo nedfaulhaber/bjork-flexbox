@@ -45,16 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  background: black; }
-
 .header .logo, .gallery-header .search {
   display: flex;
   width: 30%;
@@ -90,102 +80,85 @@ body {
     .header .header-nav a:hover, .gallery-header .gallery-nav a:hover {
       color: #509cbc; }
 
-.gallery {
-  display: flex;
-  flex-direction: column; }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-.row {
-  display: flex;
-  width: 100%; }
-  @media only screen and (max-width: 875px) {
-    .row {
-      flex-direction: column; } }
+body {
+  background: black; }
 
-.image {
-  height: 400px;
+.header {
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid white;
-  background: black;
-  width: 25%; }
-  @media only screen and (max-width: 875px) {
-    .image {
-      width: 100%; } }
-  .image .image-label {
-    opacity: 0;
-    font-family: Dosis;
-    font-size: 22px;
-    font-weight: normal;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 0 0 1px black; }
+  background: black; }
+  @media only screen and (max-width: 700px) {
+    .header {
+      height: 0px;
+      width: 0px;
+      display: none; } }
+  @media only screen and (max-width 700px) {
+    .header .logo {
+      height: 0px;
+      width: 0px;
+      display: none; } }
+  @media only screen and (max-width: 700px) {
+    .header .header-nav {
+      height: 0px;
+      width: 0px;
+      display: none; } }
 
-.image p {
-  opacity: 0;
-  transition: .2s;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  text-align: center;
-  line-height: 400px; }
-  .image p:hover {
-    opacity: 1; }
-  .image p:after, .image p:before {
-    z-index: -1;
-    opacity: .8;
-    transition: .2s;
-    content: "";
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
+@media only screen and (max-width: 700px) {
+  .nav-button {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); }
+    top: 20px;
+    right: 40px; } }
+  @media only screen and (max-width: 700px) and (max-width: 385px) {
+    .nav-button {
+      right: 20px;
+      top: 15px; } }
 
-.gig {
-  background-image: url("../img/bjork-spikes.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 50%; }
-  @media only screen and (max-width: 875px) {
-    .gig {
-      width: 100%; } }
-
-.disc {
-  background-image: url("../img/homogenic.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.vid {
-  background-image: url("../img/hyperballad.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.peeps {
-  background-image: url("../img/gondry.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.events {
-  background-image: url("../img/MoMa.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.archive {
-  background-image: url("../img/bjork_color.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 50%; }
-  @media only screen and (max-width: 875px) {
-    .archive {
-      width: 100%; } }
+@media only screen and (max-width: 700px) {
+  .nav-button span {
+    display: flex;
+    flex-direction: column;
+    height: 2px;
+    width: 30px;
+    margin: 5px 0px;
+    background: white; } }
+.gallery-header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background: #275366; }
+  @media only screen and (max-width: 1010px) {
+    .gallery-header {
+      padding: 0 20px 0; } }
+  @media only screen and (max-width: 878px) {
+    .gallery-header {
+      display: none; } }
+  .gallery-header .gallery-nav {
+    height: 100px; }
+    .gallery-header .gallery-nav ul {
+      justify-content: space-around; }
+    .gallery-header .gallery-nav a {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: normal;
+      color: white; }
+  .gallery-header .search {
+    height: 100px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    color: white; }
+    .gallery-header .search p {
+      padding-right: 10px;
+      text-decoration: none; }
+      .gallery-header .search p:hover {
+        color: #509cbc; }
 
 .hero {
   background-image: url("../img/2bjorks.jpg");
@@ -266,74 +239,94 @@ body {
           width: 0px;
           display: none; } }
 
-.header {
-  height: 200px;
+.gallery {
   display: flex;
-  background: black; }
-  @media only screen and (max-width: 700px) {
-    .header {
-      height: 0px;
-      width: 0px;
-      display: none; } }
-  @media only screen and (max-width 700px) {
-    .header .logo {
-      height: 0px;
-      width: 0px;
-      display: none; } }
-  @media only screen and (max-width: 700px) {
-    .header .header-nav {
-      height: 0px;
-      width: 0px;
-      display: none; } }
+  flex-direction: column; }
 
-@media only screen and (max-width: 700px) {
-  .nav-button {
+.row {
+  display: flex;
+  width: 100%; }
+  @media only screen and (max-width: 875px) {
+    .row {
+      flex-direction: column; } }
+
+.image {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid white;
+  background: black;
+  width: 25%; }
+  @media only screen and (max-width: 875px) {
+    .image {
+      width: 100%; } }
+
+.image p {
+  opacity: 0;
+  font-family: Dosis;
+  font-size: 22px;
+  font-weight: normal;
+  color: white;
+  transition: .2s;
+  text-shadow: 0 0 1px black;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  line-height: 400px; }
+  .image p:hover {
+    opacity: 1; }
+  .image p:after, .image p:before {
+    z-index: -1;
+    transition: .2s;
+    content: "";
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 20px;
-    right: 40px; } }
-  @media only screen and (max-width: 700px) and (max-width: 385px) {
-    .nav-button {
-      right: 20px;
-      top: 15px; } }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
 
-@media only screen and (max-width: 700px) {
-  .nav-button span {
-    display: flex;
-    flex-direction: column;
-    height: 2px;
-    width: 30px;
-    margin: 5px 0px;
-    background: white; } }
-.gallery-header {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  background: #275366; }
-  @media only screen and (max-width: 1010px) {
-    .gallery-header {
-      padding: 0 20px 0; } }
-  @media only screen and (max-width: 878px) {
-    .gallery-header {
-      display: none; } }
-  .gallery-header .gallery-nav {
-    height: 100px; }
-    .gallery-header .gallery-nav ul {
-      justify-content: space-around; }
-    .gallery-header .gallery-nav a {
-      font-family: Roboto;
-      font-size: 18px;
-      font-weight: normal;
-      color: white; }
-  .gallery-header .search {
-    height: 100px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    color: white; }
-    .gallery-header .search p {
-      padding-right: 10px;
-      text-decoration: none; }
-      .gallery-header .search p:hover {
-        color: #509cbc; }
+.gig {
+  background-image: url("../img/bjork-spikes.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50%; }
+  @media only screen and (max-width: 875px) {
+    .gig {
+      width: 100%; } }
+
+.disc {
+  background-image: url("../img/homogenic.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.vid {
+  background-image: url("../img/hyperballad.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.peeps {
+  background-image: url("../img/gondry.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.events {
+  background-image: url("../img/MoMa.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.archive {
+  background-image: url("../img/bjork_color.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50%; }
+  @media only screen and (max-width: 875px) {
+    .archive {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
