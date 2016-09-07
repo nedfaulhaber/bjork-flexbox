@@ -8,6 +8,10 @@ This project was for Epicodus CSS class and was designed to practice SASS, flexb
 
 ## Setup/Installation Requirements
 
+* Follow this link: https://github.com/nedfaulhaber/bjork-flexbox
+* 
+OR
+
 * Clone this repository.
 * In the terminal, run: sass --watch scss:css
 
