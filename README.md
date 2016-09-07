@@ -10,7 +10,7 @@ This project was for Epicodus CSS class and was designed to practice SASS, flexb
 
 * Follow this link: https://github.com/nedfaulhaber/bjork-flexbox
 
-OR
+  OR
 
 * Clone this repository.
 * In the terminal, run: sass --watch scss:css
